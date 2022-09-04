@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form>
+        <div>
+        <label for="fname">First Name:</label>     <!--To let the user know what we want them to type-->
+        <input type="text" id="fname" name="fname" placeholder="John" required>  
+        </div>
+        <!--id = for so that when we click on the label it selects our input box-->
+        <!-- name attribute- When we submit the data what sort of name we want to give to the data(it's like a variable) -->
+        <!-- placeholder- displays some default text to the user -->
+        <!-- Required- it is a boolean attribute and the user needs to type the information which has required before submitting -->
+
+        <br>
+
+        <div>
+        <label for="lname">Last Name:</label>     
+        <input type="text" id="lname" name="lname" placeholder="Doe" required>  
+        </div>
+
+        <br>
+
+        <div>
+            <label for="pass"> Password:</label>
+            <input type="password" id="pass" name="pass">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="johndoe@gmail.com">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="num">Contact Number:</label>
+            <input type="tel" name="num" id="num">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="birth">Birth date:</label>
+            <input type="date" name="birth" id="birth">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="quantity">Quantity:</label>
+            <input type="number" name="quantity" id="quantity" max="10" min="0" value="0">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="title">Title:</label>
+            
+
+            <label for="mr.">Mr.</label>
+            <input type="radio" name="title" id="mr.">
+
+            <label for="mrs.">Mrs.</label>
+            <input type="radio" name="title" id="mrs.">
+
+            <label for="PhD.">PhD.</label>
+            <input type="radio" name="title" id="PhD.">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="payment">Payment:</label>
+            <select name="payment" id="payment">
+                <option value="visa">visa</option>
+                <option value="mastercard">mastercard</option>
+                <option value="giftcard">giftcard</option>
+            </select>
+        </div>
+
+        <br>
+
+        <div>
+            <input type="reset" value="Reset" >
+        </div>
+
+        <br>
+
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+       </form>
+</body>
+</html>
