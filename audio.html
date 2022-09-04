@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <audio controls autoplay muted loop>   <!-- Controls, autoplay, muted, loop are all boolean attribute -->
+        <!-- Creating multiple source so that if the browser does not support one source element 
+        It can play the other -->
+        <source src="Taylor Swift - august (Lyrics).mp3">
+        <source src="Taylor Swift - august (Lyrics).wav">
+        This browser does not support HTML5 audio 
+        <!--Will display this if the browser does not support any of the nested sources-->
+    </audio>
+
+    <!-- MP4, WebM, Ogg- Need video of one of these file types -->
+    <video controls>
+        <source src="istockphoto-1350010606-640_adpp_is.mp4">
+        <source src="istockphoto-1350010606-640_adpp_is.WebM">
+        This browser does not support HTML5 video
+    </video>
+    
+    
+
+
+</body>
+</html>
